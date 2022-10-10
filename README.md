@@ -1,16 +1,30 @@
-# TEAM TOADD team number
+# TEAM 3
 
-## App name
+<h2 align="center">BlueColab App</h1>
 
 ## Team members
+___
+<!-- prettier-ignore-start -->
+<!-- markdownlint-disable -->
+<table>
+  <tbody>
+    <tr>
+      <td align="center"><a href="https://github.com/andrewiadevaia"><img src="https://avatars.githubusercontent.com/u/1499479?v=3?s=100" width="100px;" alt=""/><br /><sub><b>Andrew Iadevaia</b></sub></a><br/></td>
+      <td align="center"><a href="https://github.com/jennsommer02"><img src="https://avatars.githubusercontent.com/u/95663014?v=3?s=100" width="100px;" alt=""/><br /><sub><b>Jenn Sommer</b></sub></a><br/></td>
+      <td align="center"><a href="https://github.com/Mattbavaro32"><img src="https://avatars.githubusercontent.com/u/93224332?v=3?s=100" width="100px;" alt=""/><br /><sub><b>Matt Bavaro</b></sub></a><br/></td>
+      <td align="center"><a href="https://github.com/Falco-code"><img src="https://avatars.githubusercontent.com/u/82824651?v=3?s=100" width="100px;" alt=""/><br /><sub><b>Michael Falco</b></sub></a><br/></td>
+    </tr>
+  </tbody>
+</table>
 
-TOADD names of the team members
-TOADD picture of the team
+<!-- markdownlint-restore -->
+<!-- prettier-ignore-end -->
 
 ## App description
+Water quality monitoring and indexing app. Presents the users with the ability to get updated information about pace's local community water supply.
 
 ## Idea Proposal
-[Idea Proposal]()
+[Idea Proposal](documents/IdeaProposal.md)
 
 ## Calendar
 [Calendar](https://calendar.google.com/calendar/u/0?cid=aXZoMmU3NjhzMjRkdGlxZWYwcXZvbzhxcjBAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ)
