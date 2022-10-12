@@ -3,7 +3,7 @@
 <h2 align="center">BlueColab App</h1>
 
 ## Team members
-___
+
 <!-- prettier-ignore-start -->
 <!-- markdownlint-disable -->
 <table>
