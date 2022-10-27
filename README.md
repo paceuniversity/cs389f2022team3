@@ -1,6 +1,6 @@
 # TEAM 3
 
-<h2 align="center">BlueColab App</h1>
+<h2 align="center">Indexify App</h1>
 
 ## Team members
 
@@ -20,22 +20,28 @@
 <!-- markdownlint-restore -->
 <!-- prettier-ignore-end -->
 
-## App description
+# App description
 Water quality monitoring and indexing app. Presents the users with the ability to get updated information about pace's local community water supply.
 
-## Idea Proposal
-[Idea Proposal](documents/IdeaProposal.md)
+# Idea Proposal
+* [Idea Proposal](documents/IdeaProposal.md)
 
-## Calendar
-[Calendar](https://calendar.google.com/calendar/u/0?cid=aXZoMmU3NjhzMjRkdGlxZWYwcXZvbzhxcjBAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ)
+# Calendar
+* [Calendar](https://calendar.google.com/calendar/u/0?cid=aXZoMmU3NjhzMjRkdGlxZWYwcXZvbzhxcjBAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ)
 
-## Product Backlog
-[Product Backlog](https://docs.google.com/spreadsheets/d/1pazKeT9Bxtusb0r9nfrSDZGlBs2pEJp0zhjorNtGFBg/edit?usp=sharing)
+# Product Backlog
+* [Product Backlog](https://docs.google.com/spreadsheets/d/1pazKeT9Bxtusb0r9nfrSDZGlBs2pEJp0zhjorNtGFBg/edit?usp=sharing)
 
-## Architecture & Design
+# Requirements Discovery
+* [Persona](documents/persona.pdf)
+* [Use Case UML](documents/usecase.pdf)
+
+# Architecture & Design
 [Architecture & Design]()
 
-## Process
+# Tools & APIs
+
+# Process
 
 ### Sprint 1
 
@@ -58,12 +64,8 @@ Water quality monitoring and indexing app. Presents the users with the ability t
 * [Sprint demo video]()
 * [Sprint retrospective]()
 
-## Tools & APIs
-
-## Final delivery
+# Final delivery
 
 * [Final presentation]()
 * [Poster]()
 * [Process description]()
-
-
