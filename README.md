@@ -41,6 +41,25 @@ Water quality monitoring and indexing app. Presents the users with the ability t
 
 # Tools & APIs
 
+### Communication
+* Discord
+
+### Development
+* Visual Studio Code
+* Jetbrains IDE
+* Android Studio
+
+### APIs
+* BlueColab API
+
+### Databases
+* InfluxDB
+* MariaDB
+
+### Cloud
+* Azure Load Balancer
+* Azure Web App
+
 # Process
 
 ### Sprint 1
