@@ -72,7 +72,24 @@ Water quality monitoring and indexing app. Presents the users with the ability t
 ### Sprint 2
 
 * [Sprint planning]()
-* [Scrums]()
+* [Scrums]
+
+[Scrum 11/2/22]
+
+1. What did you do since Monday? 
+
+Scheduling time between members on when to implement certain elements such as UI and other non-functional elements.
+
+2. What will you do until the next Scrum? 
+
+We will start making a functional version of the User Interface and menus on the application in Android studeio before implementing the heavy framework backend.
+
+3. What are your impediments/problems?
+
+Scheduling and time managament of team members avilablility to complete tasks on the project 
+
+
+
 * [Sprint demo video]()
 * [Sprint retrospective]()
 
