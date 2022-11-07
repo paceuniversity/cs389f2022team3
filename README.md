@@ -69,6 +69,29 @@ Water quality monitoring and indexing app. Presents the users with the ability t
 * [Sprint demo video]()
 * [Sprint retrospective]()
 
+#### Scrums
+
+1. What did you do since Monday?
+    ```
+    - Confirmed Everyone's Android Studio has Prefrences/Plugins Synced
+    - Logo Design and Vector Layering
+    - Populated Project Dashboard
+    - Generated Code Base for foundation
+    ```
+2. What will you do until the next Scrum?
+    ```
+    - Update the Git README
+    - ListView Adapter for Home Page
+    - Target API with Token Header Auth
+    - Generate Boiler Template Placeholders
+    ```
+3. What are your impediments/problems?
+    ```
+    - UI Components malformed when updated.
+    - Handling nested responses from API
+    - Looking into why sometimes gradle builds will fail
+    ```
+
 ### Sprint 2
 
 * [Sprint planning]()
