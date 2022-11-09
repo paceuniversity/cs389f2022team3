@@ -71,6 +71,23 @@ Water quality monitoring and indexing app. Presents the users with the ability t
 
 #### Scrums
 
+[11/2/22]
+
+1. What did you do since Monday? 
+    ```
+	Scheduling time between members on when to implement certain elements such as UI and other non-functional elements.
+    ```
+2. What will you do until the next Scrum? 
+    ```
+	We will start making a functional version of the User Interface and menus on the application in Android studeio before implementing the heavy framework backend.
+    ```
+3. What are your impediments/problems?
+    ```
+	Scheduling and time managament of team members avilablility to complete tasks on the project 
+    ```
+
+[11/7/22]
+
 1. What did you do since Monday?
     ```
     - Confirmed Everyone's Android Studio has Prefrences/Plugins Synced
@@ -92,27 +109,29 @@ Water quality monitoring and indexing app. Presents the users with the ability t
     - Looking into why sometimes gradle builds will fail
     ```
 
+[11/9/22]
+
+1. What did you do since Monday?
+    ```
+    - Logo Design Finalization
+    - Assigned each team member responsibilities on the project board
+    ```
+2. What will you do until the next Scrum?
+    ```
+    - Update the Git README
+    - Finalize project for the end of Sprint 1
+    ```
+3. What are your impediments/problems?
+    ```
+    - UI Components malformed when updated.
+    - Handling nested responses from API
+    - Looking into why sometimes gradle builds will fail
+    ```
+
 ### Sprint 2
 
 * [Sprint planning]()
-* [Scrums]
-
-[Scrum 11/2/22]
-
-1. What did you do since Monday? 
-
-Scheduling time between members on when to implement certain elements such as UI and other non-functional elements.
-
-2. What will you do until the next Scrum? 
-
-We will start making a functional version of the User Interface and menus on the application in Android studeio before implementing the heavy framework backend.
-
-3. What are your impediments/problems?
-
-Scheduling and time managament of team members avilablility to complete tasks on the project 
-
-
-
+* [Scrums]()
 * [Sprint demo video]()
 * [Sprint retrospective]()
 
