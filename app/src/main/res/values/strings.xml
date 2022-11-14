@@ -6,5 +6,9 @@
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="cond">Cond:</string>
-    <string name="DOpct">DOpct</string>
+    <string name="dopct">DOpct:</string>
+    <string name="sal">Sal:</string>
+    <string name="temp">Temp:</string>
+    <string name="turb">Turb:</string>
+    <string name="pH">pH:</string>
 </resources>
