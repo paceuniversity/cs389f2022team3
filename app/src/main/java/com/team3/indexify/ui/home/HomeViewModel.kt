@@ -32,6 +32,12 @@ class HomeViewModel : ViewModel() {
     private val _temp = MutableLiveData<String>()
     val temp: LiveData<String> = _temp
 
+    private val _turb = MutableLiveData<String>()
+    val turb: LiveData<String> = _turb
+
+    private val _pH = MutableLiveData<String>()
+    val pH: LiveData<String> = _pH
+
     init {
         getSensorData()
     }
@@ -45,6 +51,8 @@ class HomeViewModel : ViewModel() {
                 _dopct.value = listResult.sensors.DOpct.toString()
                 _sal.value = listResult.sensors.Sal.toString()
                 _temp.value = listResult.sensors.Temp.toString()
+                _turb.value = listResult.sensors.Turb.toString()
+                _pH.value = listResult.sensors.pH.toString()
 
             } catch (e: Exception) {
                 _status.value = "Failure: ${e.message}"
