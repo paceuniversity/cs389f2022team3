@@ -109,7 +109,7 @@
             android:id="@+id/linearLayout2"
             android:layout_width="317dp"
             android:layout_height="232dp"
-            android:layout_marginStart="48dp"
+            android:layout_marginStart="47dp"
             android:layout_marginTop="31dp"
             android:layout_marginEnd="47dp"
             android:layout_marginBottom="214dp"

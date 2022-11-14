@@ -15,10 +15,10 @@ enum class BlueApiStatus { LOADING, ERROR, DONE }
 class HomeViewModel : ViewModel() {
 
     private val _station = MutableLiveData<String>()
-    val station: LiveData<String> = _cond
+    val station: LiveData<String> = _station
 
-    private val _cond = MutableLiveData<String>()
-    val cond: LiveData<String> = _cond
+    private val _timestamp = MutableLiveData<String>()
+    val timestamp: LiveData<String> = _timestamp
 
     private val _cond = MutableLiveData<String>()
     val cond: LiveData<String> = _cond
@@ -47,6 +47,9 @@ class HomeViewModel : ViewModel() {
         viewModelScope.launch {
             try {
                 val listResult = BlueApi.retrofitService.getSensorData()
+                _station.value = listResult.measurement
+                _timestamp.value = listResult.timestamp
+
                 _cond.value = listResult.sensors.Cond.toString()
                 _dopct.value = listResult.sensors.DOpct.toString()
                 _sal.value = listResult.sensors.Sal.toString()
@@ -55,7 +58,7 @@ class HomeViewModel : ViewModel() {
                 _pH.value = listResult.sensors.pH.toString()
 
             } catch (e: Exception) {
-                _status.value = "Failure: ${e.message}"
+                _station.value = "Failure: ${e.message}"
             }
         }
     }
