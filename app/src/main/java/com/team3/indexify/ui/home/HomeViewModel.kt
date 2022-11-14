@@ -23,6 +23,15 @@ class HomeViewModel : ViewModel() {
     private val _cond = MutableLiveData<String>()
     val cond: LiveData<String> = _cond
 
+    private val _dopct = MutableLiveData<String>()
+    val dopct: LiveData<String> = _dopct
+
+    private val _sal = MutableLiveData<String>()
+    val sal: LiveData<String> = _sal
+
+    private val _temp = MutableLiveData<String>()
+    val temp: LiveData<String> = _temp
+
     init {
         getSensorData()
     }
@@ -32,8 +41,11 @@ class HomeViewModel : ViewModel() {
         viewModelScope.launch {
             try {
                 val listResult = BlueApi.retrofitService.getSensorData()
-                _status.value = listResult.timestamp
                 _cond.value = listResult.sensors.Cond.toString()
+                _dopct.value = listResult.sensors.DOpct.toString()
+                _sal.value = listResult.sensors.Sal.toString()
+                _temp.value = listResult.sensors.Temp.toString()
+
             } catch (e: Exception) {
                 _status.value = "Failure: ${e.message}"
             }
