@@ -11,4 +11,6 @@
     <string name="temp">Temp:</string>
     <string name="turb">Turb:</string>
     <string name="pH">pH:</string>
+    <string name="timestamp">Time:</string>
+    <string name="station">Station:</string>
 </resources>

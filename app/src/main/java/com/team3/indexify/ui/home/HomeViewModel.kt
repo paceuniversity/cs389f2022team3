@@ -14,11 +14,11 @@ enum class BlueApiStatus { LOADING, ERROR, DONE }
  */
 class HomeViewModel : ViewModel() {
 
-    // The internal MutableLiveData that stores the status of the most recent request
-    private val _status = MutableLiveData<String>()
+    private val _station = MutableLiveData<String>()
+    val station: LiveData<String> = _cond
 
-    // The external immutable LiveData for the request status
-    val status: LiveData<String> = _status
+    private val _cond = MutableLiveData<String>()
+    val cond: LiveData<String> = _cond
 
     private val _cond = MutableLiveData<String>()
     val cond: LiveData<String> = _cond
