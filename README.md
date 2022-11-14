@@ -106,6 +106,20 @@ Water quality monitoring and indexing app. Presents the users with the ability t
 * [Sprint demo video]()
 * [Sprint retrospective]()
 
+## Retrospective
+
+*	Sprint goal
+*	Number of stories planned versus implemented - 5/8
+*	Number of points planned versus implemented - 25/31
+*	Planned versus actual velocity
+
+### Sprint summary
+```We should start shifting focus more towards simpler implementation of certain aspects of the app. We should also increase the amount of interaction we have together as a group rather then being 2 people working in a session or indiviual work for components. We as a team should stop spending long amounts of time on non-functional user stories that do not have high priorities and just deal with having to work with some user stories not being implemented yet. We are stuggling with finding reliable material for kotlin resources being forced to learn from pre-built projects where the author implemented something similar so we also need to stop setting our expectations so high for the overall outcome of some features. Overall we were able to work together to learn how to implement features in a non-native language (kotlin) and we are proud of that.```
+
+### Backlog Evolution
+```The backlog did change very early in the sprint 1 planning phase. It has taken a lot of time and thinking for us to get it right and fully understand what makes for good user stories on a product backlog. Once we started sprint planned we understood how a certain story could be broken down into multiple or how multiple stories could just be served as one.```
+
+
 # Final delivery
 
 * [Final presentation]()
