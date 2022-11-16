@@ -94,7 +94,7 @@ Water quality monitoring and indexing app. Presents the users with the ability t
 
 ### Sprint 2
 
-* [Sprint planning]()
+* [Sprint planning](https://docs.google.com/spreadsheets/d/1pazKeT9Bxtusb0r9nfrSDZGlBs2pEJp0zhjorNtGFBg/edit#gid=573988504)
 * [Scrums]()
 * [Sprint demo video]()
 * [Sprint retrospective]()
