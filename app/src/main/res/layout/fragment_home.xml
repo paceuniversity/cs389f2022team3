@@ -15,7 +15,28 @@
         android:layout_height="match_parent"
         tools:context=".ui.home.HomeFragment">
 
+        <LinearLayout
+            android:id="@+id/linear_layout_station"
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:background="@drawable/rect_border"
+            android:orientation="vertical"
+            android:padding="10dip"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
 
+            <Spinner
+                android:id="@+id/station_spinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="48dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </LinearLayout>
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </layout>
