@@ -29,14 +29,14 @@
                 android:id="@+id/sensorTitle"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="PLACEHOLDER" />
+                android:text="@{sensorData.name}" />
 
             <TextView
                 android:id="@+id/sensorValue"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:fontFamily="monospace"
-                android:text="PLACEHOLDER"
+                android:text="@{sensorData.getValue()}"
                 android:textAlignment="center"
                 android:textSize="20sp"
                 android:textStyle="bold" />
