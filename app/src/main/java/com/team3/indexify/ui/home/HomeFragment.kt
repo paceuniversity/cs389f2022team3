@@ -2,36 +2,69 @@ package com.team3.indexify.ui.home
 
 import androidx.lifecycle.ViewModelProvider
 import android.os.Bundle
+import android.util.Log
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.AdapterView
+import android.widget.ArrayAdapter
+import android.widget.Spinner
 import android.widget.TextView
 import androidx.fragment.app.viewModels
+import com.team3.indexify.R
 import com.team3.indexify.databinding.FragmentHomeBinding
 
 class HomeFragment : Fragment() {
 
-    private val viewModel: HomeViewModel by viewModels()
+    private var _binding: FragmentHomeBinding? = null
 
-    /**
-     * Inflates the layout with Data Binding, sets its lifecycle owner to the OverviewFragment
-     * to enable Data Binding to observe LiveData, and sets up the RecyclerView with an adapter.
-     */
+    // This property is only valid between onCreateView and
+    // onDestroyView.
+    private val binding get() = _binding!!
+
     override fun onCreateView(
-        inflater: LayoutInflater, container: ViewGroup?,
+        inflater: LayoutInflater,
+        container: ViewGroup?,
         savedInstanceState: Bundle?
-    ): View? {
-        val binding = FragmentHomeBinding.inflate(inflater)
+    ): View {
+        val homeViewModel =
+            ViewModelProvider(this).get(HomeViewModel::class.java)
 
-        // Allows Data Binding to Observe LiveData with the lifecycle of this Fragment
+        _binding = FragmentHomeBinding.inflate(inflater, container, false)
+        val root: View = binding.root
+
         binding.lifecycleOwner = this
+        binding.viewModel = homeViewModel
 
-        // Giving the binding access to the OverviewViewModel
-        binding.viewModel = viewModel
+        val spinner: Spinner = binding.stationSpinner
+        ArrayAdapter.createFromResource(
+            this.requireActivity(),
+            R.array.station_array,
+            android.R.layout.simple_spinner_item
+        ).also { adapter ->
+            // Specify the layout to use when the list of choices appears
+            adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item)
+            // Apply the adapter to the spinner
+            spinner.adapter = adapter
+            spinner.onItemSelectedListener = object : AdapterView.OnItemSelectedListener{
+                override fun onNothingSelected(parent: AdapterView<*>?) {
+                    Log.v("Spinner", "nothingSelected")
+                }
 
-        // Sets the adapter of the photosGrid RecyclerView
+                override fun onItemSelected(parent: AdapterView<*>?, view: View?, position: Int, id: Long) {
+                    val station = parent?.getItemAtPosition(position).toString()
+                    homeViewModel.setStation(station)
+                }
 
-        return binding.root
+            }
+        }
+
+        return root
+    }
+
+    override fun onDestroyView() {
+        super.onDestroyView()
+        _binding = null
     }
 }

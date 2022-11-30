@@ -1,0 +1,12 @@
+version: "3"
+
+services:
+  mariadb:
+    image: "mariadb:latest"
+    restart: 'always'
+    ports:
+      - 33306:3306
+    volumes:
+      - ./db-data:/var/lib/mysql
+    environment:
+      - MYSQL_DATABASE=bluecolab_django

@@ -1,16 +1,14 @@
 <resources>
-    <string name="app_name">indexify</string>
-    <string name="title_history">History</string>
+    <string name="app_name">Indexify</string>
+
     <string name="title_home">Home</string>
+    <string name="title_history">History</string>
     <string name="title_about">About</string>
     <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
-    <string name="cond">Cond:</string>
-    <string name="dopct">DOpct:</string>
-    <string name="sal">Sal:</string>
-    <string name="temp">Temp:</string>
-    <string name="turb">Turb:</string>
-    <string name="pH">pH:</string>
-    <string name="timestamp">Time:</string>
-    <string name="station">Station:</string>
+
+
+    <string-array name="station_array">
+        <item>Ada</item>
+        <item>Alan</item>
+    </string-array>
 </resources>
