@@ -1,0 +1,10 @@
+version: '3'
+services:
+  influxdb:
+    image: influxdb:latest
+    volumes:
+      # Mount for influxdb data directory and configuration
+      - ./influx-data:/var/lib/influxdb2:rw
+      - ./influx-etc:/etc/influxdb2
+    ports:
+      - "8086:8086"
