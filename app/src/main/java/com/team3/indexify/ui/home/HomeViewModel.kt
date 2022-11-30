@@ -22,4 +22,11 @@ class HomeViewModel : ViewModel() {
     private val _selectedStation = MutableLiveData<String>()
     val selectedStation: LiveData<String> = _selectedStation
 
+    init {
+        resetView()
+    }
+
+    fun resetView() {
+        _selectedStation.value = "Ada"
+    }
 }
