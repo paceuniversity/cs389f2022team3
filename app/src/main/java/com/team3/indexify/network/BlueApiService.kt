@@ -27,10 +27,23 @@ private val retrofit = Retrofit.Builder()
     .baseUrl(BASE_URL)
     .build()
 
+/**
+ * A public interface that exposes the [getSensorData] method
+ */
+
 interface ColabApiService {
+    /**
+     * Returns a [List] of [SensorData] and this method can be called from a Coroutine.
+     * The @GET annotation indicates that the "android" endpoint will be requested with the GET
+     * HTTP method
+     */
     @GET("sensordata/{measurement}/android")
     suspend fun getSensorData(@Path("measurement") measurement : String): SensorData
 }
+
+/**
+ * A public Api object that exposes the lazy-initialized Retrofit service
+ */
 
 object ColabApi {
     val retrofitService: ColabApiService by lazy { retrofit.create(ColabApiService::class.java) }
