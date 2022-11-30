@@ -27,12 +27,11 @@ private val retrofit = Retrofit.Builder()
     .baseUrl(BASE_URL)
     .build()
 
-interface BlueApiService {
+interface ColabApiService {
     @GET("sensordata/{measurement}/android")
     suspend fun getSensorData(@Path("measurement") measurement : String): SensorData
 }
 
-object BlueApi {
-    val retrofitService : BlueApiService by lazy {
-        retrofit.create(BlueApiService::class.java) }
+object ColabApi {
+    val retrofitService: ColabApiService by lazy { retrofit.create(ColabApiService::class.java) }
 }
