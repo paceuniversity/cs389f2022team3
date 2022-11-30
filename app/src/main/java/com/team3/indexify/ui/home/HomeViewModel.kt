@@ -28,6 +28,11 @@ class HomeViewModel : ViewModel() {
         resetView()
     }
 
+    fun setStation(desiredStation: String) {
+        _selectedStation.value = desiredStation
+        refreshView()
+    }
+
     fun resetView() {
         _selectedStation.value = "Ada"
     }
