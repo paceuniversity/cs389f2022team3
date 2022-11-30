@@ -1,4 +1,4 @@
-package com.team3.indexify.models
+package com.team3.indexify.network.models
 
 data class SensorData(
     val deployment_id: Int,
