@@ -1,4 +1,4 @@
-package com.team3.indexify.network
+package com.team3.indexify.network.core
 
 import com.squareup.moshi.Moshi
 import com.squareup.moshi.kotlin.reflect.KotlinJsonAdapterFactory
