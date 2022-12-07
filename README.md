@@ -1,11 +1,104 @@
-# TEAM 3
+<a id="readme-top"></a>
 
-<h2 align="center">Indexify App</h1>
+<!-- PROJECT SHIELDS -->
+[![Contributors][contributors-shield]][contributors-url]
+[![Closed-Pulls][closed-pulls-shield]][closed-pulls-url]
+[![Open-Issues][open-issues-shield]][open-issues-url]
+[![Closed-Issues][closed-issues-shield]][closed-issues-url]
 
-## Team members
+<!-- PROJECT LOGO -->
+<br />
 
-<!-- prettier-ignore-start -->
-<!-- markdownlint-disable -->
+<div align="center">
+  <a href="https://github.com/paceuniversity/cs389f2022team3">
+    <img src="docs/images/logo/logo.svg" alt="Logo" width="80" height="80">
+  </a>
+
+<!-- PROJECT TITLE -->
+<h3 align="center">Indexify</h3>
+  
+  <p align="center">
+    A real time water quality monitoring solution for Android!
+    <br />
+    <a href="https://github.com/orgs/paceuniversity/projects/5"><strong>Project Dashboard »</strong></a>
+    <br />
+  </p>
+</div>
+
+<!-- TABLE OF CONTENTS -->
+<details open>
+  <summary>Table of Contents</summary>
+  <ol>
+    <li>
+      <a href="#about-the-app">About The App</a>
+      <ul>
+        <li><a href="#app-contributors">App Contributors</a></li>
+      </ul>
+    </li>
+    <li>
+      <a href="#requirements-and-discovery">Requirements and Discovery</a>
+      <ul>
+        <li><a href="#general-requirements">General Requirements</a></li>
+        <li><a href="#sprint-backlogs">Sprint Backlogs</a></li>
+      </ul>
+    </li>
+    <li><a href="#development-tools">Development Tools</a></li>
+    <li>
+      <a href="#architecture-and-design">Architecture and Design</a>
+      <ul>
+        <li><a href="#physical-architecture">Physical Architecture</a></li>
+        <li><a href="#use-case-diagram">Use Case Diagram</a></li>
+        <li><a href="#sequence-diagram">Sequence Diagram</a></li>
+        <li><a href="#activity-diagram">Activity Diagram</a></li>
+      </ul>
+    </li>
+    <li>
+      <a href="#">Sprints</a>
+      <ul>
+        <li>
+          <a href="#">Sprint 1</a>
+          <ul>
+            <li><a href="#">Scrums</a></li>
+            <li><a href="#">Retrospective</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#">Sprint 2</a>
+          <ul>
+            <li><a href="#">Scrums</a></li>
+            <li><a href="#">Retrospective</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#">Sprint 3</a>
+          <ul>
+            <li><a href="#">Scrums</a></li>
+            <li><a href="#">Retrospective</a></li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+  </ol>
+</details>
+
+<!-- ABOUT THE APP -->
+## About The App
+
+To solve Sustainable Development Goal (SDG) #6: Ensure availability and sustainable management of water and sanitation for all, Team 3 is driven to develop a solution. Our goal is a water quality monitoring solution that can be used on smartphones. Specifcally, we are targeting Android based devices for this proof-of-concept.
+
+The accessability to such information is a must for living in a healthy society. People have the right to know what is in their drinking water in a reliable and timely manner. Using latest Android technologies we are building the Kotlin based application to serve the world.
+
+Some notable features included:
+* Live sensor data
+* Historical search of sensor data
+* Viewing different locations 
+
+This is one large step to a better and more sustainable world.
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<h3 id="app-contributors" align="center">App Contributors</h3>
+<p align="center">
 <table>
   <tbody>
     <tr>
@@ -16,112 +109,123 @@
     </tr>
   </tbody>
 </table>
+</p>
 
-<!-- markdownlint-restore -->
-<!-- prettier-ignore-end -->
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-# App description
-Water quality monitoring and indexing app. Presents the users with the ability to get updated information about pace's local community water supply.
+<!-- REQUIREMENTS & DISCOVERY -->
+## Requirements and Discovery
 
-# Idea Proposal
-* [Idea Proposal](documents/IdeaProposal.md)
+This section provides the links to this projects requirements and discovery phase documents. Most importantly the sprint backlogs that show our progress and mindset throughout the development process.
 
-# Calendar
-* [Calendar](https://calendar.google.com/calendar/u/0?cid=aXZoMmU3NjhzMjRkdGlxZWYwcXZvbzhxcjBAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ)
+### General Requirements
+* [User Stories](https://docs.google.com/spreadsheets/d/1pazKeT9Bxtusb0r9nfrSDZGlBs2pEJp0zhjorNtGFBg/edit#gid=8)
+* [Persona](https://github.com/paceuniversity/cs389f2022team3/blob/main/documents/persona.pdf)
+* [UI Sketch]()
 
-# Product Backlog
-* [Product Backlog](https://docs.google.com/spreadsheets/d/1pazKeT9Bxtusb0r9nfrSDZGlBs2pEJp0zhjorNtGFBg/edit?usp=sharing)
+### Sprint Backlogs
 
-# Requirements Discovery
-* [Persona](documents/persona.pdf)
-* [Use Case UML](documents/usecase.pdf)
+* [Sprint 1](https://docs.google.com/spreadsheets/d/1pazKeT9Bxtusb0r9nfrSDZGlBs2pEJp0zhjorNtGFBg/edit#gid=1056044682)
+* [Sprint 2](https://docs.google.com/spreadsheets/d/1pazKeT9Bxtusb0r9nfrSDZGlBs2pEJp0zhjorNtGFBg/edit#gid=573988504)
+* [Sprint 3]()
 
-# Architecture & Design
-[Architecture & Design]()
-
-# Tools & APIs
-
-### Communication
-* Discord
-
-### Development
-* Visual Studio Code
-* Jetbrains IDE
-* Android Studio
-
-### APIs
-* BlueColab API
-
-### Databases
-* InfluxDB
-* MariaDB
-
-### Cloud
-* Azure Load Balancer
-* Azure Web App
-
-# Process
-
-### Sprint 1
-
-* [Sprint planning](https://docs.google.com/spreadsheets/d/1pazKeT9Bxtusb0r9nfrSDZGlBs2pEJp0zhjorNtGFBg/edit?usp=sharing)
-* [Scrums]()
-* [Sprint demo video]()
-* [Sprint retrospective]()
-
-#### Scrums
-
-1. What did you do since Monday?
-    ```
-    - Confirmed Everyone's Android Studio has Prefrences/Plugins Synced
-    - Logo Design and Vector Layering
-    - Populated Project Dashboard
-    - Generated Code Base for foundation
-    ```
-2. What will you do until the next Scrum?
-    ```
-    - Update the Git README
-    - ListView Adapter for Home Page
-    - Target API with Token Header Auth
-    - Generate Boiler Template Placeholders
-    ```
-3. What are your impediments/problems?
-    ```
-    - UI Components malformed when updated.
-    - Handling nested responses from API
-    - Looking into why sometimes gradle builds will fail
-    ```
-
-### Sprint 2
-
-* [Sprint planning](https://docs.google.com/spreadsheets/d/1pazKeT9Bxtusb0r9nfrSDZGlBs2pEJp0zhjorNtGFBg/edit#gid=573988504)
-* [Scrums]()
-* [Sprint demo video]()
-* [Sprint retrospective]()
-
-### Sprint 3
-
-* [Sprint planning]()
-* [Scrums]()
-* [Sprint demo video]()
-* [Sprint retrospective]()
-
-## Retrospective
-
-*	Sprint goal
-*	Number of stories planned versus implemented - 5/8
-*	Number of points planned versus implemented - 25/31
-*	Planned versus actual velocity
-
-### Sprint summary
-```We should start shifting focus more towards simpler implementation of certain aspects of the app. We should also increase the amount of interaction we have together as a group rather then being 2 people working in a session or indiviual work for components. We as a team should stop spending long amounts of time on non-functional user stories that do not have high priorities and just deal with having to work with some user stories not being implemented yet. We are stuggling with finding reliable material for kotlin resources being forced to learn from pre-built projects where the author implemented something similar so we also need to stop setting our expectations so high for the overall outcome of some features. Overall we were able to work together to learn how to implement features in a non-native language (kotlin) and we are proud of that.```
-
-### Backlog Evolution
-```The backlog did change very early in the sprint 1 planning phase. It has taken a lot of time and thinking for us to get it right and fully understand what makes for good user stories on a product backlog. Once we started sprint planned we understood how a certain story could be broken down into multiple or how multiple stories could just be served as one.```
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
-# Final delivery
+<!-- DEVELOPMENT TOOLS -->
+## Development Tools
+<br>
+<p align="center">
+    <a href="" alt="Discord">
+        <img src="https://img.shields.io/badge/Discord-%235865F2.svg?style=for-the-badge&logo=discord&logoColor=white" /></a>
+    <a href="" alt="VS Code">
+        <img src="https://img.shields.io/badge/Visual%20Studio%20Code-0078d7.svg?style=for-the-badge&logo=visual-studio-code&logoColor=white" /></a>
+    <a href="" alt="Android Studio">
+        <img src="https://img.shields.io/badge/Android%20Studio-3DDC84.svg?style=for-the-badge&logo=android-studio&logoColor=white" /></a>
+    <a href="" alt="Kotlin">
+        <img src="https://img.shields.io/badge/kotlin-%237F52FF.svg?style=for-the-badge&logo=kotlin&logoColor=white" /></a>
+    <a href="" alt="InfluxDB">
+        <img src="https://img.shields.io/badge/InfluxDB-22ADF6?style=for-the-badge&logo=InfluxDB&logoColor=white" /></a>
+    <a href="" alt="MariaDB">
+        <img src="https://img.shields.io/badge/MariaDB-003545?style=for-the-badge&logo=mariadb&logoColor=white" /></a>
+    <a href="" alt="Azure">
+        <img src="https://img.shields.io/badge/azure-%230072C6.svg?style=for-the-badge&logo=microsoftazure&logoColor=white" /></a>
+    <a href="" alt="Codecov">
+        <img src="https://img.shields.io/badge/codecov-%23ff0077.svg?style=for-the-badge&logo=codecov&logoColor=white" /></a>
+    <a href="" alt="Docker">
+        <img src="https://img.shields.io/badge/docker-%230db7ed.svg?style=for-the-badge&logo=docker&logoColor=white" /></a>
+</p>
 
-* [Final presentation]()
-* [Poster]()
-* [Process description]()
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+
+<!-- ARCH AND DESIGN -->
+## Architecture and Design
+
+This section shows diagrams and models ranging from the physical infastructure we developed on to the interactions between certain components in our android app.
+
+### Physical architecture
+
+The backend that our application is built ontop of is cloud based APIs and No SQL timeseries databases to query and store the sensor data infromation that is collected.
+
+<div align="center">
+    <img src="docs/images/arch/Infastructure.svg" alt="Infastructure" width="800" height="400">
+</div>
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+### Use case diagram
+
+<div align="center">
+    <img src="docs/images/arch/UseCase.svg" alt="UseCase" width="500" height="400">
+</div>
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+### Sequence diagram
+
+<div align="center">
+    <img src="docs/images/arch/Sequence.svg" alt="Sequence" width="800" height="600">
+</div>
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+
+### Activity diagram
+
+<div align="center">
+    <img src="docs/images/arch/Activity.svg" alt="Activity" width="600" height="500">
+</div>
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[contributors-shield]: https://img.shields.io/github/contributors/paceuniversity/cs389f2022team3?style=for-the-badge
+[contributors-url]: https://github.com/paceuniversity/cs389f2022team3/graphs/contributors
+
+[closed-pulls-shield]: https://img.shields.io/github/issues-pr-closed-raw/paceuniversity/cs389f2022team3?color=informational&style=for-the-badge
+[closed-pulls-url]: https://github.com/paceuniversity/cs389f2022team3/pulls?q=is%3Apr+is%3Aclosed
+
+[open-issues-shield]: https://img.shields.io/github/issues-raw/paceuniversity/cs389f2022team3?style=for-the-badge
+[open-issues-url]: https://github.com/paceuniversity/cs389f2022team3/issues
+
+[closed-issues-shield]: https://img.shields.io/github/issues-closed-raw/paceuniversity/cs389f2022team3?color=blueviolet&style=for-the-badge
+[closed-issues-url]: https://github.com/paceuniversity/cs389f2022team3/issues?q=is%3Aissue+is%3Aclosed
