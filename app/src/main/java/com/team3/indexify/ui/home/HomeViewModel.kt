@@ -5,6 +5,7 @@ import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import com.team3.indexify.network.core.ColabApi
+import com.team3.indexify.network.models.SensorDataModel
 import kotlinx.coroutines.launch
 
 enum class ColabApiStatus { LOADING, ERROR, DONE }
@@ -16,8 +17,8 @@ class HomeViewModel : ViewModel() {
     private val _status = MutableLiveData<ColabApiStatus>()
     val status: LiveData<ColabApiStatus> = _status
 
-    private val _sensorData = MutableLiveData<SensorDataModel>()
-    val sensorData: LiveData<SensorDataModel> = _sensorData
+    private val _sensorDataModel = MutableLiveData<SensorDataModel>()
+    val sensorDataModel: LiveData<SensorDataModel> = _sensorDataModel
 
     private val _selectedStation = MutableLiveData<String>()
     val selectedStation: LiveData<String> = _selectedStation
