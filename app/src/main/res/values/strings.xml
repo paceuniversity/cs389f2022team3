@@ -8,6 +8,7 @@
     <string name="tv_station">Station</string>
     <string name="tv_deployment">Deployment</string>
     <string name="tv_timestamp">Timestamp</string>
+    <string name="tv_sensor">Sensor Values</string>
 
 
     <string-array name="station_array">
