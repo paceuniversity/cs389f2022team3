@@ -27,7 +27,23 @@
             app:layout_constraintTop_toTopOf="parent"
             app:useDefaultMargins="true">
 
+            <TextView
+                android:id="@+id/spinnerTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="@string/tv_station"
+                android:textSize="16sp"
+                app:layout_columnWeight="1"
+                app:layout_rowWeight="1" />
 
+            <Spinner
+                android:id="@+id/stationSpinner"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:minHeight="48dp"
+                app:layout_columnWeight="2"
+                app:layout_rowWeight="1" />
 
         </androidx.gridlayout.widget.GridLayout>
 
