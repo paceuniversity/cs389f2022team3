@@ -46,6 +46,7 @@ class HomeViewModel : ViewModel() {
             try {
                 val resp = ColabApi.retrofitService.getSensorData(_selectedStation.value.toString())
                 _sensorDataModel.value = resp
+                _sensorModel.value = resp.sensors
 
 
                 _status.value = ColabApiStatus.DONE
