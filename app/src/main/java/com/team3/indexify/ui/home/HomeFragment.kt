@@ -53,6 +53,7 @@ class HomeFragment : Fragment() {
                 override fun onItemSelected(parent: AdapterView<*>?, view: View?, position: Int, id: Long) {
                     val station = parent?.getItemAtPosition(position).toString()
                     homeViewModel.setStation(station)
+                    homeViewModel.refreshView()
                 }
 
             }
