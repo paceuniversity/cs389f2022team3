@@ -44,7 +44,6 @@ class HomeViewModel : ViewModel() {
         viewModelScope.launch {
             _status.value = ColabApiStatus.LOADING
             try {
-                _sensorData.value = ColabApi.retrofitService.getSensorData(_selectedStation.value.toString())
                 _status.value = ColabApiStatus.DONE
             } catch (e: Exception) {
                 _status.value = ColabApiStatus.ERROR
