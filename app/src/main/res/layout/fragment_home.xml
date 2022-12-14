@@ -102,7 +102,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:gravity="center_horizontal"
-                android:text="@string/sensor_values"
+                android:text="@string/tv_sensor"
                 android:textSize="16sp"
                 app:layout_columnSpan="2"
                 app:layout_columnWeight="1"
