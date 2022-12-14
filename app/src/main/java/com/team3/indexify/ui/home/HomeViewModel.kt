@@ -1,12 +1,10 @@
 package com.team3.indexify.ui.home
 
-import android.util.Log
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import com.team3.indexify.network.core.ColabApi
-import com.team3.indexify.network.models.SensorDataModel
 import kotlinx.coroutines.launch
 
 enum class ColabApiStatus { LOADING, ERROR, DONE }
