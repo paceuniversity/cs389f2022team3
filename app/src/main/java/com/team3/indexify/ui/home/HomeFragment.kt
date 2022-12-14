@@ -1,17 +1,15 @@
 package com.team3.indexify.ui.home
 
-import androidx.lifecycle.ViewModelProvider
 import android.os.Bundle
 import android.util.Log
-import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.AdapterView
 import android.widget.ArrayAdapter
 import android.widget.Spinner
-import android.widget.TextView
-import androidx.fragment.app.viewModels
+import androidx.fragment.app.Fragment
+import androidx.lifecycle.ViewModelProvider
 import com.team3.indexify.R
 import com.team3.indexify.databinding.FragmentHomeBinding
 
@@ -55,6 +53,7 @@ class HomeFragment : Fragment() {
                 override fun onItemSelected(parent: AdapterView<*>?, view: View?, position: Int, id: Long) {
                     val station = parent?.getItemAtPosition(position).toString()
                     homeViewModel.setStation(station)
+                    homeViewModel.refreshView()
                 }
 
             }

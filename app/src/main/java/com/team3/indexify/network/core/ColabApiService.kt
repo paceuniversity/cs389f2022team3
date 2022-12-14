@@ -37,7 +37,7 @@ interface ColabApiService {
      * The @GET annotation indicates that the "android" endpoint will be requested with the GET
      * HTTP method
      */
-    @GET("sensordata/{measurement}/android")
+    @GET("sensordata/{measurement}")
     suspend fun getSensorData(@Path("measurement") measurement : String): SensorDataModel
 }
 

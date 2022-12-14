@@ -1,4 +1,5 @@
 package com.team3.indexify.network.models
+
 data class DeploymentModel(
     val Active: Boolean,
     val DeploymentID: Int,
