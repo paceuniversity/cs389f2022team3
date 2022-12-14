@@ -64,6 +64,25 @@
                 app:layout_columnWeight="1"
                 app:layout_rowWeight="1" />
 
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="@string/tv_timestamp"
+                android:textSize="16sp"
+                app:layout_columnWeight="1"
+                app:layout_rowWeight="1"
+                android:minHeight="48dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:text="@{``+ viewModel.sensorDataModel.timestamp}"
+                android:textSize="16sp"
+                app:layout_columnWeight="1"
+                app:layout_rowWeight="1" />
+
         </androidx.gridlayout.widget.GridLayout>
 
     </androidx.constraintlayout.widget.ConstraintLayout>
