@@ -4,7 +4,10 @@
     <string name="title_home">Home</string>
     <string name="title_history">History</string>
     <string name="title_about">About</string>
-    <!-- TODO: Remove or change this placeholder text -->
+
+    <string name="tv_station">Station</string>
+    <string name="tv_deployment">Deployment</string>
+    <string name="tv_timestamp">Timestamp</string>
 
 
     <string-array name="station_array">
