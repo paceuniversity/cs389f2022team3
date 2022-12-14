@@ -34,7 +34,6 @@ class HomeViewModel : ViewModel() {
 
     fun setStation(desiredStation: String) {
         _selectedStation.value = desiredStation
-        refreshView()
     }
 
     fun resetView() {
