@@ -1,5 +1,6 @@
 package com.team3.indexify.ui.home
 
+import android.util.Log
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
@@ -48,9 +49,15 @@ class HomeViewModel : ViewModel() {
                 _sensorDataModel.value = resp
                 _sensorModel.value = resp.sensors
 
+                Log.v("HomeViewModel", "refreshView: ${resp.sensors.Cond}")
+
 
                 _status.value = ColabApiStatus.DONE
             } catch (e: Exception) {
+
+                Log.v("HomeViewModel", "refreshView: exception")
+
+
                 _status.value = ColabApiStatus.ERROR
             }
         }
