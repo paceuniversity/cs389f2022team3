@@ -49,14 +49,8 @@ class HomeViewModel : ViewModel() {
                 _sensorDataModel.value = resp
                 _sensorModel.value = resp.sensors
 
-                Log.v("HomeViewModel", "refreshView: ${resp.sensors.Cond}")
-
-
                 _status.value = ColabApiStatus.DONE
             } catch (e: Exception) {
-
-                Log.v("HomeViewModel", "refreshView: exception")
-
 
                 _status.value = ColabApiStatus.ERROR
             }
