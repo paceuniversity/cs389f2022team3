@@ -5,9 +5,10 @@ import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
-import com.team3.indexify.network.core.ColabApi
-import com.team3.indexify.network.models.SensorDataModel
-import com.team3.indexify.network.models.SensorModel
+import com.team3.indexify.core.ColabApi
+import com.team3.indexify.models.SensorDataModel
+import com.team3.indexify.models.SensorInfoModel
+import com.team3.indexify.models.SensorModel
 import kotlinx.coroutines.launch
 
 enum class ColabApiStatus { LOADING, ERROR, DONE }
@@ -28,8 +29,15 @@ class HomeViewModel : ViewModel() {
     private val _selectedStation = MutableLiveData<String>()
     val selectedStation: LiveData<String> = _selectedStation
 
+    private val _selectedSensor = MutableLiveData<SensorInfoModel>()
+    val selectedSensor: LiveData<SensorInfoModel> = _selectedSensor
+
     init {
         resetView()
+    }
+
+    fun updateSelectedSensor(sensorInfo: SensorInfoModel) {
+        _selectedSensor.value = sensorInfo
     }
 
     fun setStation(desiredStation: String) {
@@ -38,6 +46,7 @@ class HomeViewModel : ViewModel() {
 
     fun resetView() {
         _selectedStation.value = "Ada"
+        _selectedSensor.value = SensorInfoModel(title = "Conductivity", description = "Conductivity is a measure of the ability of water to pass an electrical current. Because dissolved salts and other inorganic chemicals conduct electrical current, conductivity increases as salinity increases.")
         refreshView()
     }
 

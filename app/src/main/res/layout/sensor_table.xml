@@ -7,7 +7,7 @@
 
         <variable
             name="sensorModel"
-            type="com.team3.indexify.network.models.SensorModel" />
+            type="com.team3.indexify.models.SensorModel" />
     </data>
 
     <TableLayout
@@ -18,6 +18,7 @@
         <TableRow>
 
             <com.google.android.material.card.MaterialCardView
+                android:id="@+id/condCard"
                 android:layout_width="0dp"
                 android:layout_height="100dp"
                 android:layout_margin="10dp"
@@ -37,15 +38,17 @@
                         android:layout_marginTop="8dp"
                         android:fontFamily="@font/googlesans_medium"
                         android:text="@{@string/sv_Conductivity}"
-                        android:textSize="16sp"
+                        android:textSize="18sp"
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toTopOf="parent"
                         tools:text="@tools:sample/full_names" />
 
                     <TextView
+                        android:id="@+id/textView8"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="8dp"
+                        android:layout_marginEnd="8dp"
                         android:fontFamily="@font/googlesans_bold"
                         android:text="@{`` + sensorModel.cond}"
                         android:textSize="28sp"
@@ -54,6 +57,16 @@
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toTopOf="parent"
                         tools:text="@tools:sample/us_zipcodes" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:fontFamily="@font/googlesans_bold"
+                        android:text="mS/cm"
+                        android:textSize="16sp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/textView8" />
 
 
                 </androidx.constraintlayout.widget.ConstraintLayout>
@@ -80,12 +93,13 @@
                         android:layout_marginTop="8dp"
                         android:fontFamily="@font/googlesans_medium"
                         android:text="@{@string/sv_DOpct}"
-                        android:textSize="16sp"
+                        android:textSize="18sp"
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toTopOf="parent"
                         tools:text="@tools:sample/full_names" />
 
                     <TextView
+                        android:id="@+id/textViewDOpct"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="8dp"
@@ -98,6 +112,15 @@
                         app:layout_constraintTop_toTopOf="parent"
                         tools:text="@tools:sample/us_zipcodes" />
 
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:fontFamily="@font/googlesans_bold"
+                        android:text="%"
+                        android:textSize="16sp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/textViewDOpct" />
 
                 </androidx.constraintlayout.widget.ConstraintLayout>
 
@@ -120,19 +143,19 @@
                     android:layout_height="match_parent">
 
                     <TextView
-                        android:id="@+id/textView4"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginStart="8dp"
                         android:layout_marginTop="8dp"
                         android:fontFamily="@font/googlesans_medium"
                         android:text="@{@string/sv_Salinity}"
-                        android:textSize="16sp"
+                        android:textSize="18sp"
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toTopOf="parent"
                         tools:text="@tools:sample/full_names" />
 
                     <TextView
+                        android:id="@+id/textView4"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="8dp"
@@ -145,6 +168,15 @@
                         app:layout_constraintTop_toTopOf="parent"
                         tools:text="@tools:sample/us_zipcodes" />
 
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:fontFamily="@font/googlesans_bold"
+                        android:text="ppt"
+                        android:textSize="16sp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/textView4" />
 
                 </androidx.constraintlayout.widget.ConstraintLayout>
 
@@ -163,24 +195,24 @@
                     android:layout_height="match_parent">
 
                     <TextView
-                        android:id="@+id/textView3"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginStart="8dp"
                         android:layout_marginTop="8dp"
                         android:fontFamily="@font/googlesans_medium"
                         android:text="@{@string/sv_Temperature}"
-                        android:textSize="16sp"
+                        android:textSize="18sp"
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toTopOf="parent"
                         tools:text="@tools:sample/full_names" />
 
                     <TextView
+                        android:id="@+id/textView3"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="8dp"
                         android:fontFamily="@font/googlesans_bold"
-                        android:text="@{`` + sensorModel.temp}"
+                        android:text="@{`` + sensorModel.temp + ``}"
                         android:textSize="28sp"
                         app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintEnd_toEndOf="parent"
@@ -188,6 +220,15 @@
                         app:layout_constraintTop_toTopOf="parent"
                         tools:text="@tools:sample/us_zipcodes" />
 
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:fontFamily="@font/googlesans_bold"
+                        android:text="°C"
+                        android:textSize="16sp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/textView3" />
 
                 </androidx.constraintlayout.widget.ConstraintLayout>
 
@@ -210,19 +251,19 @@
                     android:layout_height="match_parent">
 
                     <TextView
-                        android:id="@+id/textView"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginStart="8dp"
                         android:layout_marginTop="8dp"
                         android:fontFamily="@font/googlesans_medium"
                         android:text="@{@string/sv_Turbidity}"
-                        android:textSize="16sp"
+                        android:textSize="18sp"
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toTopOf="parent"
                         tools:text="@tools:sample/full_names" />
 
                     <TextView
+                        android:id="@+id/textView"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="8dp"
@@ -235,7 +276,15 @@
                         app:layout_constraintTop_toTopOf="parent"
                         tools:text="@tools:sample/us_zipcodes" />
 
-
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:fontFamily="@font/googlesans_bold"
+                        android:text="NTU"
+                        android:textSize="16sp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/textView" />
                 </androidx.constraintlayout.widget.ConstraintLayout>
 
             </com.google.android.material.card.MaterialCardView>
@@ -260,7 +309,7 @@
                         android:layout_marginTop="8dp"
                         android:fontFamily="@font/googlesans_medium"
                         android:text="@{@string/sv_pH}"
-                        android:textSize="16sp"
+                        android:textSize="18sp"
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toTopOf="parent"
                         tools:text="@tools:sample/full_names" />
@@ -269,6 +318,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="8dp"
+                        android:layout_marginEnd="8dp"
                         android:fontFamily="@font/googlesans_bold"
                         android:text="@{`` + sensorModel.PH}"
                         android:textSize="28sp"
