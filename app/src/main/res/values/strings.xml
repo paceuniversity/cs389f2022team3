@@ -10,9 +10,19 @@
     <string name="tv_timestamp">Timestamp</string>
     <string name="tv_sensor">Sensor Values</string>
 
+    <string name="sv_Conductivity">Conductivity</string>
+    <string name="sv_DOpct">DOpct</string>
+    <string name="sv_Salinity">Salinity</string>
+    <string name="sv_Temperature">Temperature</string>
+    <string name="sv_Turbidity">Turbidity</string>
+    <string name="sv_pH">pH</string>
+
 
     <string-array name="station_array">
         <item>Ada</item>
         <item>Alan</item>
     </string-array>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="ms_cm">mS/cm</string>
 </resources>

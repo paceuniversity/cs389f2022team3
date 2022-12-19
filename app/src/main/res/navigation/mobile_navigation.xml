@@ -15,11 +15,21 @@
         android:id="@+id/navigation_home"
         android:name="com.team3.indexify.ui.home.HomeFragment"
         android:label="@string/title_home"
-        tools:layout="@layout/fragment_home" />
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_navigation_home_to_sensorFragment"
+            app:destination="@id/sensorFragment" />
+    </fragment>
 
     <fragment
         android:id="@+id/navigation_about"
         android:name="com.team3.indexify.ui.about.AboutFragment"
         android:label="@string/title_about"
         tools:layout="@layout/fragment_about" />
+
+    <fragment
+        android:id="@+id/sensorFragment"
+        android:name="com.team3.indexify.ui.home.SensorFragment"
+        android:label="Sensor Details"
+        tools:layout="@layout/fragment_sensor" />
 </navigation>
